@@ -9,6 +9,14 @@ document.getElementById('visualizar-btn').addEventListener('click', function() {
         return;
     }
 
+    // Validar formato de fechas (MM/DD/YYYY)
+    const fechaInicioValida = /^\d{2}/.test(fechaInicio);
+    const fechaFinValida = /^\d{2}/.test(fechaFin);
+    if (!fechaInicioValida || !fechaFinValida) {
+        console.error('Por favor introduzca fechas en el formato correcto (MM/DD/YYYY).');
+        return;
+    }
+
     // Aquí se llamaría a la API para obtener los datos del clima (por ejemplo, usando fetch o axios)
     // Importante: Asegúrate de manejar los errores al hacer la llamada a la API.
     console.log(`Datos para ${ciudad} desde ${fechaInicio} hasta ${fechaFin}`);
