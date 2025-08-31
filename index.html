@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de Datos del Clima</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Visualizador de Datos del Clima</h1>
+    </header>
+    <main>
+        <section>
+            <label for="ciudad">Selecciona una ciudad:</label>
+            <select id="ciudad">
+                <option value="madrid">Madrid</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="mxico">Ciudad de México</option>
+                <option value="buenosaires">Buenos Aires</option>
+            </select>
+
+            <label for="fecha-inicio">Fecha de inicio:</label>
+            <input type="date" id="fecha-inicio">
+
+            <label for="fecha-fin">Fecha de fin:</label>
+            <input type="date" id="fecha-fin">
+
+            <button id="visualizar-btn">Visualizar</button>
+        </section>
+        <section id="grafica">
+            <!-- Gráfica se mostrará aquí -->
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
