@@ -28,7 +28,10 @@ button {
     padding: 10px 15px;
     cursor: pointer;
 }
+
 /* Button hover effect to enhance user experience */
 button:hover {
     background: #455a64;
 }
+
+/* Additional styles can be added below to further customize the page */
